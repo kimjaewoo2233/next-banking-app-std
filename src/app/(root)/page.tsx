@@ -11,7 +11,7 @@ const Home = ({ searchParams: { id, page }}: SearchParamProps) => {
     const appwriteItemId = (id as string) || testAccounts[0]?.appwriteItemId;
     
     return (
-        <section className="home">
+        <section className="home col-span-4 max-xl:cols-span-1">
             <div className="home-content">
                 <header className="home-header">
                     <HeaderBox
@@ -45,4 +45,4 @@ const Home = ({ searchParams: { id, page }}: SearchParamProps) => {
     )
 }
 
-export default Home;
+export default Home
