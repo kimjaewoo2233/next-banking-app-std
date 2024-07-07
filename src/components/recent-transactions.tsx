@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import Link from "next/link";
 import { BankTabItem } from "./bank-tab-item";
 import BankInfo from "./bank-info";
+import TransactionsTable from "./transaction-table";
 
 
 const RecentTransactions = ({
@@ -59,6 +60,7 @@ const RecentTransactions = ({
                             appwriteItemId={appwriteItemId}
                             type="full"
                         />
+                            <TransactionsTable transactions={currentTransactions} />
                     </TabsContent>
                 ))}
             </Tabs>
